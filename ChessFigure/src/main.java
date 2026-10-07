@@ -14,24 +14,28 @@ void main() {
     int nFigure = 0;
 
 
+
 //задать массив фигур с помощью RND не получилось, переменная figures становится непонятной компилятору.
-    /*Scanner scan = new Scanner(System.in);
+
+    Scanner scan = new Scanner(System.in);
       while ((nFigure < 1) || (nFigure > 32)) {
         System.out.println("Введите количество фигур на поле от 1 до 32: ");
          Scanner scanner = new Scanner(System.in);
          nFigure = scan.nextInt();
      }
-    //ChessFigure[] figures;
+    ChessFigure[] figures;
+    figures = new ChessFigure[nFigure];
+
           for (int i = 0; i < nFigure; i++) {
           int randomInRangeFigure = ThreadLocalRandom.current().nextInt(1, nameFigure.length)-1;  // от min до max включительно
-          System.out.println("номер случайной фигуры" + randomInRangeFigure);
+          //System.out.println("номер случайной фигуры" + randomInRangeFigure);
           int randomInRangeColor = ThreadLocalRandom.current().nextInt(1, nameColor.length+1)-1;  // от min до max включительно. Странно работает RND. при границах 0..1 выдает только черный цвет, а в первом случае вызывает переполнение индекс коиличества фигур
-          System.out.println("номер случайного цвета" + randomInRangeColor);
-          ChessFigure figures= new ChessFigure(nameFigure[randomInRangeFigure], nameColor[randomInRangeColor]);
+          //System.out.println("номер случайного цвета" + randomInRangeColor);
+          figures[i] = new ChessFigure(nameFigure[randomInRangeFigure], nameColor[randomInRangeColor]);
           }
-*/
 
-    ChessFigure[] figures = {
+
+    /*ChessFigure[] figures = {
            new ChessFigure("pawn", "white"),
            new ChessFigure("pawn", "white"),
            new ChessFigure("pawn", "white"),
@@ -54,7 +58,7 @@ void main() {
            new ChessFigure("bishop", "black"),
            new ChessFigure("bishop", "white"),
            new ChessFigure("bishop", "white") };
-
+*/
 
 
 
